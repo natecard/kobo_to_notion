@@ -19,6 +19,12 @@ def main():
     kobo_db.connect()
     highlights = kobo_db.get_highlights()
     kobo_db.close()
+    
+    for highlight in highlights:
+        author = Utils.extract_author(highlight)
+        book = Utils.extract_book(highlight)
+        text = Utils.extract_text(highlight)
+        print(author, book, text)
 
 
 if __name__ == "__main__":
