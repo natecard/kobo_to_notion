@@ -1,8 +1,8 @@
-from notion_client import NotionClient
+from notion_client import Client
 
 class NotionExporter:
     def __init__(self, token, db_id):
-        self.notion = NotionClient(token=token)
+        self.notion = Client(token=token)
         self.db_id = db_id
         
     def add_highlight(self, author, title, text):

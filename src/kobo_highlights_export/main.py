@@ -1,19 +1,21 @@
-from kobo_highlights_export.kobo import KoboDatabase
-from kobo_highlights_export.utils import Utils
-from os import environ
+import os
 from dotenv import load_dotenv
 from notion_client import Client
 
-from src.kobo_highlights_export.notion import NotionExporter
+from kobo_highlights_export.kobo import KoboDatabase
+from kobo_highlights_export.utils import Utils
+from kobo_highlights_export.notion import NotionExporter
+
 
 load_dotenv()
-notion_api_key = environ.get('NOTION_API_KEY')
-notion_db_id = environ.get('NOTION_DB_ID')
+notion_api_key = os.environ.get('NOTION_API_KEY')
+notion_db_id = os.environ.get('NOTION_DB_ID')
 notion = Client(auth=notion_api_key)
-if environ.get('PROD') is True:
-    ereader_db = environ.get('EREADER_DB')
+if os.environ.get('PROD') is True:
+    ereader_db = os.environ.get('EREADER_DB')
 else:
-    ereader_db = environ.get('DEV_EREADER_DB')
+    db_path = os.environ.get('DEV_EREADER_DB')
+    ereader_db = os.path.join(os.path.dirname(__file__), '..', '..', db_path)
 
 
 def main():
