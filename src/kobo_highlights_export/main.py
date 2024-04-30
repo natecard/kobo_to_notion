@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from notion_client import Client
 
+from cli import cli
 from kobo import KoboDatabase
 from notion import NotionExporter
 
@@ -39,4 +40,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    cli()

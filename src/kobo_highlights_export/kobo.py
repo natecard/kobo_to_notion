@@ -1,10 +1,12 @@
+import os
 import sqlite3
 from utils import extract_author, extract_book, extract_text, round_progress
 
 
 class KoboDatabase:
     def __init__(self, db_path):
-        self.db_path = db_path
+        ereader_db = os.path.join(db_path, "./kobo/KoboReader.sqlite")
+        self.db_path = ereader_db
 
     def connect(self):
         self.conn = sqlite3.connect(self.db_path)
