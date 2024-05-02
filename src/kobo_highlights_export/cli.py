@@ -1,7 +1,7 @@
 import click
-from kobo import KoboDatabase
-from notion import NotionExporter
-from notion_insert import NotionInsert
+from .kobo import KoboDatabase
+from .notion import NotionExporter
+from .notion_insert import NotionInsert
 
 
 @click.group()
