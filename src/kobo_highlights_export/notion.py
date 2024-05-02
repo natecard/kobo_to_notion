@@ -23,15 +23,17 @@ class NotionExporter:
                 "Date Created": {"date": {}},
             },
         }
-        response = self.notion.databases.create(**new_database)
-        return response["id"]
+        try:
+            response = self.notion.databases.create(**new_database)
+            return response["id"]
+        except Exception as e:
+            print(f"Error creating database: {e}")
+            return None
 
     def add_highlight(self, book_db_id, text, book_progress, date_created):
         new_page = {
             "parent": {"database_id": book_db_id},
             "properties": {
-                # "Author": {"title": [{"text": {"content": author}}]},
-                # "Book Title": {"rich_text": [{"text": {"content": title}}]},
                 "Text": {"title": [{"text": {"content": text}}]},
                 "Book Progress": {"number": book_progress},
                 "Date Created": {"date": {"start": date_created}},
