@@ -1,18 +1,41 @@
+import pytest
+from pytest_mock import mocker
 from click.testing import CliRunner
 from src.kobo_highlights_export.cli import cli
+import tempfile
 
 
-def test_process_books_success(mocker):
+@pytest.fixture
+def temp_filepath():
+    with tempfile.NamedTemporaryFile() as temp_file:
+        yield temp_file.name
+
+
+def test_process_books_success(mocker, temp_filepath):
     # Mock the necessary dependencies
     mocker.patch("src.kobo_highlights_export.kobo.KoboDatabase")
-    mocker.patch("src.kobo_highlights_export.notion.NotionExporter")
-    mocker.patch("src.kobo_highlights_export.notion_insert.NotionInsert")
+    mock_notion_exporter = mocker.patch(
+        "src.kobo_highlights_export.notion.NotionExporter"
+    )
+    mock_notion_exporter.return_value.export_highlights.return_value = {}
+
+    mock_notion_insert = mocker.patch(
+        "src.kobo_highlights_export.notion_insert.NotionInsert"
+    )
 
     runner = CliRunner()
     result = runner.invoke(
         cli,
-        ["process-books"],
-        input="/path/to/kobo\nfake_api_key\nfake_api_key\nfake_db_id\n",
+        [
+            "process-books",
+            "--filepath",
+            temp_filepath,
+            "--api-key",
+            "fake_api_key",
+            "--db-id",
+            "fake_db_id",
+        ],
+        input="fake_api_key\n",
     )
 
     print("Exit code:", result.exit_code)

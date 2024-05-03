@@ -24,12 +24,12 @@ def cli():
     """)
     print("""                                         
 Command line tool for importing Kobo e-reader highlights into a Notion database.
-This tool allows you to connect your Kobo device, download highlights, and 
-export them to a specified Notion database. The highlights from each book are then
-saved in an individual page within the Notion database. All you need to do is follow
-the instructions provided by the command line tool, and your highlights will be
-automatically imported into your Notion workspace.
-    """)
+This tool allows you to connect your Kobo device, access the SQLite database on
+your Kobo, extract the highlights, and export them to a specified Notion database. 
+The highlights from each book are then saved in an individual page within the Notion
+database. All you need to do is follow the instructions provided by the command line tool,
+and your highlights will be automatically imported into your Notion workspace.
+""")
     pass
 
 
@@ -88,6 +88,7 @@ Enter the Database ID""",
     help="Enter the ID of the Notion database where you want to export the highlights. Ensure that this database is set up to receive the data structure being exported.",
 )
 def process_books(filepath, api_key, db_id):
+    # Echo the values to the user to confirm the input
     click.echo(f"Database ID: {db_id}")
     click.echo(f"File Path: {filepath}")
     """Retrieve database from the Bookmarks SQLite database from the Kobo."""

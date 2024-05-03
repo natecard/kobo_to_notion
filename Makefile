@@ -3,3 +3,6 @@ lint:
 
 lint fix:
 	ruff check . --fix
+
+test:
+	pytest -v
