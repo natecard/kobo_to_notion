@@ -63,10 +63,9 @@ this is done through the "Connect to" drop down in the Notion page settings.
 Hint: It should start with "secret_".
 
 Note: This key is sensitive and should not be shared with others. 
-When you enter the key, it will be hidden for security purposes.
+When you enter the key, it will ask for it to be submitted twice for confirmation.
 Enter the API key here""",
     help="Enter your Notion API key. This key is necessary for authentication to access your Notion workspace.",
-    hide_input=True,
     confirmation_prompt=True,
 )
 @click.option(
