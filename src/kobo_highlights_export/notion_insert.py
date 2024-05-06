@@ -1,6 +1,7 @@
 class NotionInsert:
-    def __init__(self, notion_client):
-        self.notion = notion_client
+    def __init__(self, notion_exporter):
+        self.notion_exporter = notion_exporter
+        self.db_id = notion_exporter.db_id
 
     def process_books(self, books):
         if not books or not isinstance(books, dict):
@@ -8,12 +9,12 @@ class NotionInsert:
             return
 
         for title, book_info in books.items():
-            book_db_id = self.notion.create_book_database(title, book_info["author"])
-            if not book_db_id:
-                continue
+            book_db_id = self.notion_exporter.create_book_database(
+                title, book_info["author"]
+            )
 
             for highlight in book_info["highlights"]:
-                self.notion.add_highlight(
+                self.notion_exporter.add_highlight(
                     book_db_id,
                     highlight["text"],
                     highlight["chapter_progress"],
