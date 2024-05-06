@@ -48,6 +48,10 @@ def format_db_title(title, author):
     return f"{title} by {author}"
 
 
+def format_db_id(book_db_id):
+    return book_db_id.replace("-", "")
+
+
 # Round the progress to three decimal places
 def round_progress(n, decimals=3):
     n = round(n * 100, decimals)
