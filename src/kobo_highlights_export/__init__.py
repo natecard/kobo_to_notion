@@ -1,6 +1,6 @@
-from .kobo import KoboDatabase
-from .notion import NotionExporter
-from .utils import extract_author, extract_book, extract_text
+from kobo import KoboDatabase
+from notion import NotionExporter
+from utils import extract_author, extract_book, extract_text
 
 
 __all__ = [

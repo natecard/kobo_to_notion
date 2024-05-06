@@ -1,7 +1,7 @@
 import click
-from .kobo import KoboDatabase
-from .notion import NotionExporter
-from .notion_insert import NotionInsert
+from kobo import KoboDatabase
+from notion import NotionExporter
+from notion_insert import NotionInsert
 
 
 @click.group()
@@ -103,4 +103,5 @@ def process_books(filepath, api_key, db_id):
     click.echo(f"Notion setup complete with Database ID: {db_id}")
     book_processor = NotionInsert(notion_exporter)
     book_processor.process_books(books)
+
     click.echo("Books successfully processed and added to Notion database.")
