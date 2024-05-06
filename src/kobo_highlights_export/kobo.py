@@ -1,13 +1,21 @@
 import os
 import sqlite3
-from .utils import extract_author, extract_book, extract_text, round_progress
+from utils import extract_author, extract_book, extract_text, round_progress
 
 
 class KoboDatabase:
     def __init__(self, db_path):
-        if "KoboReader.sqlite" not in db_path:
-            db_path = os.path.join(db_path, "./kobo/KoboReader.sqlite")
         self.db_path = db_path
+
+    @property
+    def db_path(self):
+        return self._db_path
+
+    @db_path.setter
+    def db_path(self, value):
+        if "/KoboReader.sqlite" not in value:
+            value = os.path.join(value, "/.kobo/KoboReader.sqlite")
+        self._db_path = value
 
     def connect(self):
         try:

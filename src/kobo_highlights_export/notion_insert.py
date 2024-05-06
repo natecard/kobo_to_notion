@@ -3,8 +3,14 @@ class NotionInsert:
         self.notion = notion_client
 
     def process_books(self, books):
-        for book, book_info in books.items():
-            book_db_id = self.notion.create_book_database(book, book_info["author"])
+        if not books or not isinstance(books, dict):
+            print("Invalid or empty books data.")
+            return
+
+        for title, book_info in books.items():
+            book_db_id = self.notion.create_book_database(title, book_info["author"])
+            if not book_db_id:
+                continue
 
             for highlight in book_info["highlights"]:
                 self.notion.add_highlight(
