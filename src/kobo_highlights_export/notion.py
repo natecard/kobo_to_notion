@@ -6,7 +6,23 @@ class NotionExporter:
         self.notion = Client(auth=token)
         self.db_id = db_id
 
+    def book_exists(self, title):
+        query_response = self.notion.search(
+            {
+                "query": title,
+                "filter": {"value": {"type": "page_id", "page_id": self.db_id}},
+            }
+        )
+        print(query_response)
+
     def create_book_database(self, title, author):
+        existing_id = self.book_exists(title)
+        if existing_id:
+            print(
+                f"Book '{title} by {author}' already exists. Using existing database entry."
+            )
+            return existing_id
+
         new_database = {
             "parent": {"page_id": self.db_id},
             "title": [
