@@ -1,6 +1,6 @@
 import os
 import sqlite3
-from utils import extract_author, extract_book, extract_text, round_progress
+from .utils import extract_author, extract_book, extract_text, round_progress
 
 
 class KoboDatabase:

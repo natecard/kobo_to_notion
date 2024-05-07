@@ -2,6 +2,18 @@ import pytest
 from pytest_mock import mocker
 from click.testing import CliRunner
 from src.kobo_highlights_export.cli import cli
+from src.kobo_highlights_export.kobo import KoboDatabase
+from src.kobo_highlights_export.notion import NotionExporter
+from src.kobo_highlights_export.notion_insert import NotionInsert
+from src.kobo_highlights_export.utils import (
+    extract_author,
+    format_author_name,
+    extract_book,
+    extract_text,
+    format_db_title,
+    format_db_id,
+    round_progress,
+)
 import tempfile
 
 

@@ -1,5 +1,5 @@
 from notion_client import Client
-import utils
+from .utils import format_db_title
 
 
 class NotionExporter:
@@ -40,7 +40,7 @@ class NotionExporter:
             return None
 
     def create_book_database(self, title, author):
-        formatted_title = utils.format_db_title(title, author)
+        formatted_title = format_db_title(title, author)
         existing_id = self.book_exists(formatted_title)
         if existing_id:
             print(

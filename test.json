@@ -1,0 +1,524 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "7fbf136f-510a-4bad-be16-d34952ef95be",
+            "created_time": "2024-05-06T19:28:00.000Z",
+            "last_edited_time": "2024-05-06T19:28:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-23T04:40:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 59.281
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "details,",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "details,",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/details-7fbf136f510a4badbe16d34952ef95be",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "95710e6d-9ac2-4a11-8598-66125786f7e5",
+            "created_time": "2024-05-06T19:26:00.000Z",
+            "last_edited_time": "2024-05-06T19:26:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-23T04:40:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 59.281
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "details,",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "details,",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/details-95710e6d9ac24a11859866125786f7e5",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "b68612af-1a84-4d56-acfd-227c70f9a658",
+            "created_time": "2024-05-06T19:25:00.000Z",
+            "last_edited_time": "2024-05-06T19:25:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-23T04:40:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 59.281
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "details,",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "details,",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/details-b68612af1a844d56acfd227c70f9a658",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "90dc7891-3d9d-4f63-b086-2f34cc1eb374",
+            "created_time": "2024-05-06T13:32:00.000Z",
+            "last_edited_time": "2024-05-06T13:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-23T04:40:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 59.281
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "details,",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "details,",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/details-90dc78913d9d4f63b0862f34cc1eb374",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "d213c505-0b77-4d24-a88a-293e64847434"
+}
+Book: {
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "415534c0-307f-44d2-b0b7-a022012aa92a",
+            "created_time": "2024-05-06T19:28:00.000Z",
+            "last_edited_time": "2024-05-06T19:28:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-25T03:23:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 71.257
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Santiago Valdarrama.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Santiago Valdarrama.",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Santiago-Valdarrama-415534c0307f44d2b0b7a022012aa92a",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6d78fa13-d347-4deb-ab94-e1f59474a645",
+            "created_time": "2024-05-06T19:26:00.000Z",
+            "last_edited_time": "2024-05-06T19:26:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-25T03:23:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 71.257
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Santiago Valdarrama.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Santiago Valdarrama.",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Santiago-Valdarrama-6d78fa13d3474debab94e1f59474a645",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "a79aebe9-daba-4755-b037-9710b5da968e",
+            "created_time": "2024-05-06T19:25:00.000Z",
+            "last_edited_time": "2024-05-06T19:25:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-25T03:23:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 71.257
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Santiago Valdarrama.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Santiago Valdarrama.",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Santiago-Valdarrama-a79aebe9daba4755b0379710b5da968e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6746869f-51a5-4b60-9e6e-e8db18097d68",
+            "created_time": "2024-05-06T13:32:00.000Z",
+            "last_edited_time": "2024-05-06T13:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "e46a4d98-bc06-48c4-99f5-a71869707cf5"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "f8691a0b-7a83-49a7-a34e-bf3b24f83f7d"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Date Created": {
+                    "id": "Mqsq",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-03-25T03:23:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Book Progress": {
+                    "id": "~bOz",
+                    "type": "number",
+                    "number": 71.257
+                },
+                "Text": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Santiago Valdarrama.",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Santiago Valdarrama.",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Santiago-Valdarrama-6746869f51a54b609e6ee8db18097d68",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "8bf0de1a-4baa-4caf-bb5d-bd69275235c1"
+}
