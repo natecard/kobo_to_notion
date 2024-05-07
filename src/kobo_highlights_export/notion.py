@@ -21,26 +21,20 @@ class NotionExporter:
                     return result["id"]
         return False
 
-    def highlight_exists(self, book_db_id, date_created, book_progress):
+    def highlight_exists(self, book_db_id, text):
         # formatted_book_db_id = utils.format_db_id(book_db_id)
         try:
             query_response = self.notion.databases.query(
                 database_id=book_db_id,
                 filter={
-                    "and": [
-                        {"property": "Date Created", "date": {"equals": date_created}},
-                        {
-                            "or"[
-                                {
-                                    "property": "Book Progress",
-                                    "number": {"equals": book_progress},
-                                }
-                            ]
-                        },
-                    ]
+                    "property": "Text",
+                    "formula": {"string": {"equals": text}},
                 },
             )
-            print(query_response)
+            for result in query_response["results"]:
+                if result["properties"]["Text"]["title"][0]["text"]["content"] == text:
+                    return True
+
         except Exception as e:
             print(f"Error retrieving page properties: {e}")
             return None
@@ -82,18 +76,18 @@ class NotionExporter:
                 return None
 
     def add_highlight(self, book_db_id, text, book_progress, date_created):
-        self.highlight_exists(book_db_id, date_created, book_progress)
-        # print(existing_highlight)
-        # if existing_highlight:
-        #     print("Highlight already exists.")
-        #     return
+        existing_highlight = self.highlight_exists(book_db_id, text)
 
-        # new_page = {
-        #     "parent": {"database_id": book_db_id},
-        #     "properties": {
-        #         "Text": {"title": [{"text": {"content": text}}]},
-        #         "Book Progress": {"number": book_progress},
-        #         "Date Created": {"date": {"start": date_created}},
-        #     },
-        # }
-        # self.notion.pages.create(**new_page)
+        if existing_highlight is True:
+            print("Highlight already exists.")
+            return None
+
+        new_page = {
+            "parent": {"database_id": book_db_id},
+            "properties": {
+                "Text": {"title": [{"text": {"content": text}}]},
+                "Book Progress": {"number": book_progress},
+                "Date Created": {"date": {"start": date_created}},
+            },
+        }
+        self.notion.pages.create(**new_page)
